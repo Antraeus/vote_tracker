@@ -1,0 +1,23 @@
+{
+  "name": "vote_tracker",
+  "version": "0.0.0",
+  "homepage": "https://github.com/Antraeus/vote_tracker",
+  "authors": [
+    "antraeus <antreus@gmail.com>"
+  ],
+  "description": "Vote tracker assignment",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "Chart.js": "~1.0.2"
+  }
+}
