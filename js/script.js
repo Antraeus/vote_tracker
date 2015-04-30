@@ -2,7 +2,7 @@ $(function(){
 
 var randomDossier = [];
 
-function myThunderDome(docket1_vitae, docket2_vitae) {
+function MyThunderDome(docket1_vitae, docket2_vitae) {
 
   var data = [
     {
