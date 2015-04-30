@@ -1,1 +1,87 @@
-style.css
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 25px;
+  padding: 50px;
+  font-weight: 400;
+  font-family: 'Lato', sans-serif;
+  background-color: #eee;
+}
+
+h1 {
+  font-size: 200%;
+  background-color: rgba(46,40,46,.9);
+  padding: 10px;
+  margin: 20px;
+  border-top-left-radius: 10px;
+  position: relative;
+}
+
+a {
+  text-decoration:none;
+  color:#000;
+  text-shadow: 0 0 2px #666;
+  padding: 2px;
+  position:relative;
+}
+
+.litter-box{
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 10px 10px 0px rgba(118,96,109,9), 20px 20px 0px rgba(46,40,46,.9);
+}
+
+a:hover {
+  background-color:#fff;
+  border-bottom: 2px solid #000;
+  padding: 2px;
+}
+.cat-contender {
+  position: relative;
+  left: 0px;
+  top: 0px;
+}
+
+.vote-paw{
+  position: relative; top: 25px; left: 45px;
+  background-color: #35957c;
+  border-radius: 25px;
+  border: 2px solid #7fbbab;
+  padding: 2px;
+}
+.vote-moniker{
+  position: relative;
+  top: -25px;
+  left: 75px;
+}
+
+#myChart {
+  float: right;
+  top: 10px;
+  right: 400px;
+  border-bottom-color: rgba(118,96,109,9);
+  border: 2px;
+  background-color: #7fbbab;
+  border-radius: 10px;
+}
+
+#battlebox {
+  min-width: 60%;
+  font-weight: 300;
+  color: #fff;
+  font-size: 17px;
+  border-bottom-left-radius: 25px;
+  border-top-right-radius: 25px;
+  line-height: 20px;
+  text-shadow:1px 1px 0 #666;
+  font-family: 'Lato', sans-serif;
+  background: #35957c;
+  box-shadow: 10px 10px 0px rgba(118,96,109,9), 20px 20px 0px rgba(46,40,46,.9);
+  padding-bottom: 2em; width: 25%; margin: 1em auto; padding: 1em;
+}
