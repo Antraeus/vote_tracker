@@ -9,13 +9,13 @@ function MyThunderDome(docket1_vitae, docket2_vitae) {
       value: docket1_vitae,
       color:"#F7464A",
       highlight: "#6fa809",
-      label: "Red"
+      label: "Purple"
     },
     {
       value: docket2_vitae,
       color: "#46BFBD",
       highlight: "#C781a8",
-      label: "Green"
+      label: "Cyan"
     }
             ];
  var params = {
@@ -53,7 +53,7 @@ var myThunderDome = new Chart(ctx).Bar(data,params);
 }
 
 //stageNewContestants
-/* Create function to stage new contestants by rendering elements */
+/* Create photo object controller to stage new contestants by rendering elements */
 
 function stageNewContestants(dossierArray) {
   var $clearArena = $('.contestants').empty();
@@ -78,8 +78,31 @@ function stageNewContestants(dossierArray) {
       src: docket2.imgUrl
     }
   );
-/*Append cat images onto .contestants class, which was cleared(), and use the ids
-created in the img1/2 variables */
+/*Clear staging arena and keep track of voting events*/
+  $clearArena.append(img1, img2);
+  var $docket1img = $('#imgOne');
+  var $docket2img = $('#imgTwo');
+
+  $('#imgOne').on('click', function() {
+    $(this).css("border", "5px solid yellow");
+    docket1.votes++;
+    docket1.timesShown++;
+    docket2.timesShown++;
+    setTimeout(getTwoEntrants, 500, randomDossier);
+    myThunderDome(docket1.votes, docket2.votes);
+  });
+
+  $('#imgTwo').on("click", function() {
+    $(this).css("border", "5px solid yellow");
+    docket2.votes++;
+    docket1.timesShown++;
+    docket2.timesShown++;
+    setTimeout(getTwoEntrants, 500, randomDossier);
+    myThunderDome(docket1.votes, docket2.votes);
+  })
+};
+
+generateDossier();
 
 
 /* Create function to stage new contestants by rendering elements */
