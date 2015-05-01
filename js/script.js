@@ -52,8 +52,34 @@ var ctx = document.getElementById("myThunderDome").getContext("2d");
 var myThunderDome = new Chart(ctx).Bar(data,params);
 }
 
-/*  Create function to generate a dossier of available contestants
-    to be listed as contenders */
+//stageNewContestants
+/* Create function to stage new contestants by rendering elements */
+
+function stageNewContestants(dossierArray) {
+  var $clearArena = $('.contestants').empty();
+  var selectContender1 = Math.floor(Math.random() * dossierArray.length);
+  var selectContender2 = Math.floor(Math.random() * dossierArray.length);
+
+  while(selectContender1 === selectContender2) {
+    selectContender2 = Math.floor(Math.random() * dossierArray.length);
+  }
+  var docket1 = dossierArray[selectContender1];
+  var docket2 = dossierArray[selectContender2];
+//Creates <img> elements from the compiled list of entrants
+  var img1 = $('<img>').addClass('cat-contender', 'litter-box').attr(
+    {
+      id: 'imgOne',
+      src: docket1.imgUrl
+    }
+  );
+  var img2 = $('<img>').addClass('cat-contender', 'litter-box').attr(
+    {
+      id: 'imgTwo',
+      src: docket2.imgUrl
+    }
+  );
+/*Append cat images onto .contestants class, which was cleared(), and use the ids
+created in the img1/2 variables */
 
 
 /* Create function to stage new contestants by rendering elements */
