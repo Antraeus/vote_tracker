@@ -104,7 +104,7 @@ var elRightContender = document.getElementById('right-contender');
   console.log(dossierArray.length);
 })();
 
-
+/* Dummy Proof Copy
 
 (function(){
 // Setting up the contestants for battle!
@@ -172,13 +172,13 @@ var ThunderDomeEntrant = function(takedowns, dossier){
   this.dossier = dossierArray;
 console.log(dossierArray);
 }
-/* Tracking Object: */
+/* Tracking Object: *//*
 var trackerSleuth = function (arenaLeft, arenaRight){
   this.arenaLeft = document.getElementById('arena-left');
   this.arenaRight = document.getElementById('arena-right');
   var selectContestant = this.selectContestant;
 }
-/* Random selector prototype method */
+/* Random selector prototype method *//*
 Array.prototype.selectContestant = function(dossierArray){
   return this[Math.floor(Math.random() * this.length)]
 var leftContender = dossierArray.selectContestant();
@@ -193,3 +193,4 @@ var elRightContender = document.getElementById('right-contender');
   }
   console.log(dossierArray.length);
 })();
+*/

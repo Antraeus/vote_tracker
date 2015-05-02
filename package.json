@@ -1,19 +1,30 @@
 {
   "name": "vote_tracker",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "vote tracker assignment",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/Antraeus/vote_tracker.git"
   },
   "author": "Aristide Tosi",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/Antraeus/vote_tracker/issues"
   },
-  "homepage": "https://github.com/Antraeus/vote_tracker"
+  "homepage": "https://github.com/Antraeus/vote_tracker",
+  "keywords": [
+    "voting",
+    "score",
+    "chart.js",
+    "thunderdome",
+    "node.js"
+  ],
+  "dependencies": {
+    "express": "^4.12.3"
+  }
 }
