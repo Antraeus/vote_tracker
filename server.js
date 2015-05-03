@@ -31,6 +31,7 @@ app.listen(process.env.PORT || 5000, function(){ //environmental variable proces
 app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));
 });
+
 //listening on port 3000
 var sys = require("sys");
 sys.puts("Reticulating splines..");
