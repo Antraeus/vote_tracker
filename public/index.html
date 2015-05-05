@@ -15,27 +15,31 @@
 <header>
 <h1>THUNDERDOME</h1>
 </header>
-<body id="battlebox">
+<body>
   <section>
     <article>
-     <div id='arena-left'>
-        <img src='' id='left-contender'>
+     <div class="contender">
+        <img src='images/01.jpg' id='left-contender'>
       </div>
-      <div class='vote-button'>
-        <img src='images/voting_paw_print.png' class='vote-paw'>
+      <div>
+        <img src='images/voting_paw_print.png'>
         <p class="vote-moniker">VOTE</p>
       </div>
     </article>
-  <canvas id="myThunderDome" class="litter-box" width="300" height="300"></canvas>
+  <aside id="myChart">
+    <canvas id="myThunderDome" width="300" height="300"></canvas>
+  </aside>
+
     <article>
-      <div id='arena-right'>
-        <img src='' id="right-contender">
+      <div class="contender">
+        <img src='images/02.jpg' id='right-contender'>
       </div>
-      <div class='vote-button'>
-        <img src='images/voting_paw_print.png' class='vote-paw'>
+      <div>
+        <img src='images/voting_paw_print.png'>
         <p class="vote-moniker">VOTE</p>
       </div>
     </article>
+
 </section>
 <script src="js/script.js"></script>
 <script src="js/canvas.js"></script>

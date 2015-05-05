@@ -7,6 +7,7 @@
 }
 
 body {
+  min-width: 60%;
   margin: 25px;
   padding: 50px;
   font-weight: 400;
@@ -32,12 +33,22 @@ a {
   position:relative;
 }
 
-.litter-box{
-  border-top-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  box-shadow: 10px 10px 0px rgba(118,96,109,9), 20px 20px 0px rgba(46,40,46,.9);
+.contender{
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: -10px;
+  box-shadow: -10px -10px 0px rgba(118,96,109,9), -20px -20px 0px rgba(46,40,46,.9);
   display: flex;
-  margin: 10px;
+  min-width: 50%;
+  min-height: 50%;
+  margin: 5px;
+
+}
+#left-contender{
+    position: relative; top:0; left: 0;
+}
+
+#right-contender{
+  position: relative; top:0; left: 0;
 }
 
 a:hover {
@@ -45,14 +56,10 @@ a:hover {
   border-bottom: 2px solid #000;
   padding: 2px;
 }
-.contestants{
-  position: relative;
-  left: 0px;
-  top: 0px;
-}
-
 .vote-paw{
-  position: relative; top: 25px; left: 45px;
+  position: relative;
+  top: 60px;
+  left: 100px;
   background-color: #35957c;
   border-radius: 25px;
   border: 2px solid #7fbbab;
@@ -65,17 +72,18 @@ a:hover {
 }
 
 #myChart {
+  position: absolute;
   float: right;
-  top: 10px;
-  right: 400px;
+  top: 300px;
+  left: 725px;
   border-bottom-color: rgba(118,96,109,9);
   border: 2px;
   background-color: #7fbbab;
   border-radius: 10px;
 }
 
-#battlebox {
-  min-width: 60%;
+body {
+  min-width: 80%;
   font-weight: 300;
   color: #fff;
   font-size: 17px;
